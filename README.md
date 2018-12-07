@@ -14,11 +14,11 @@
 ### 效果
 原图
 
-![template_img](https://github.com/lipopo/funypython/tree/develop/templates/template_img.png)
+![template_img](https://github.com/lipopo/funpython/blob/develop/templates/template_img.png)
 
 转换成
 
-![template_translate](https://github.com/lipopo/funypython/tree/develop/templates/template_translate.png)
+![template_translate](https://github.com/lipopo/funpython/blob/develop/templates/template_translate.png)
 
 ### 使用方式
 安装funypython后，默认会自动安装a_paint工具
