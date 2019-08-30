@@ -7,6 +7,8 @@ version = "1.0"
 require_packages = [
     "opencv-python",
     "click",
+    "Pillow-PIL",
+    "numpy"
 ]
 
 setup(

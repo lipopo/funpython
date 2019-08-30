@@ -1,15 +1,19 @@
 # -*- coding: utf8 -*-
+import sys
 import cv2
 import numpy as np
 import click
 import random
+from PIL import Image
+from io import BytesIO
 
 coders = "abcdefghijklmnopqestuvwxyz0123456789/?>.,<'\";:]}[{=+-_)(*&^%$#@!~`|\\"
 
-def img2paint(img_path, col, row):
-    img = cv2.imread(img_path)
+def img2paint(img_path, col, row, img=None, cmin=0,cmax=100):
+    if img is None:
+        img = cv2.imread(img_path)
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.uint8)
-    img_canny = cv2.Canny(img_gray, 0, 100)
+    img_canny = cv2.Canny(img_gray, cmin, cmax)
 
     height, width = img_canny.shape
 
