@@ -35,3 +35,20 @@ paint_img decode-paint [file_path]
 ```
 
 具体用法参照命令的help
+
+## code_dot工具
+
+### 简介
+
+故名思意，及时根据给定图像，给出点行
+
+### 效果
+
+
+### 使用方式
+
+安装funypython后，默认会安装code_dot工具
+
+```
+code_dot -i Acca
+```

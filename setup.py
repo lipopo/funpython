@@ -16,7 +16,8 @@ setup(
     packages = find_packages(),
     entry_points = {
         'console_scripts': [
-            "paint_img=funypy.a_paint.aPaint:cli"
+            "paint_img=funypy.a_paint.aPaint:cli",
+            "code_dot=funypy.code_dot.code_dot:main"
         ]
     }
 )
