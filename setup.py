@@ -17,7 +17,8 @@ setup(
     entry_points = {
         'console_scripts': [
             "paint_img=funypy.a_paint.aPaint:cli",
-            "code_dot=funypy.code_dot.code_dot:main"
+            "code_dot=funypy.code_dot.code_dot:main",
+            "dot_code=funypy.code_dot.dot_code:main"
         ]
     }
 )

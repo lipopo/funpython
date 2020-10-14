@@ -10,7 +10,11 @@ def main():
     _input = args.i
     _binslash = ""
     for _code in _input:
-        _binslash += bin(ord(_code))[2:]
+
+        _bitcode = bin(ord(_code))[2:]
+        for i in range(8 - len(_bitcode)):
+            _bitcode = "0" + _bitcode
+        _binslash += _bitcode
 
     print(_binslash.replace("1", ".. ").replace("0", ". ").strip())
 
